@@ -21,6 +21,13 @@ configurations {
     }
 }
 
+configurations.all {
+    resolutionStrategy {
+        force 'com.graphql-java:java-dataloader:3.3.0'
+        force 'com.graphql-java:graphql-java:22.0'
+    }
+}
+
 repositories {
     mavenCentral()
 }
